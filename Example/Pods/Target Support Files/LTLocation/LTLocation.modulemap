@@ -1,0 +1,6 @@
+framework module LTLocation {
+  umbrella header "LTLocation-umbrella.h"
+
+  export *
+  module * { export * }
+}

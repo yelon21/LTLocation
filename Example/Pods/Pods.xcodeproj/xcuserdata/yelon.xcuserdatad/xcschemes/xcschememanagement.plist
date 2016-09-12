@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>GTMBase64.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>LTLocation.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-LTLocation_Example.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-LTLocation_Tests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>2AC19FBDEAC7BDB6EDF94FBB743145E1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C37EF188BE397973508CA30E9B1DC556</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CEE114F340814CB1990F608137C45AF4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DFDD344EE6D1B4CED8490931D7E97DB5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

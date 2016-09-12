@@ -1,0 +1,19 @@
+PODS:
+  - GTMBase64 (1.0.0)
+  - LTLocation (0.1.0):
+    - GTMBase64 (~> 1.0.0)
+
+DEPENDENCIES:
+  - LTLocation (from `../`)
+
+EXTERNAL SOURCES:
+  LTLocation:
+    :path: ../
+
+SPEC CHECKSUMS:
+  GTMBase64: 0da7372e95f5171f3f652db38cde6716f8eb5e24
+  LTLocation: 1c0afca547b77194f9206267fc514a8f55ed89c7
+
+PODFILE CHECKSUM: 258cf35918ed3e15a3e5ea349baff6094a6ea800
+
+COCOAPODS: 1.0.0

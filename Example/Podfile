@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LTLocation_Example' do
+  pod 'LTLocation', :path => '../'
+
+  target 'LTLocation_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,27 @@
+{
+  "name": "LTLocation",
+  "version": "0.1.0",
+  "summary": "LTLocation 123",
+  "description": "LTLocation 定位.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/LTLocation",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yelon21": "254956982@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/LTLocation.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LTLocation/Classes/**/*",
+  "dependencies": {
+    "GTMBase64": [
+      "~> 1.0.0"
+    ]
+  }
+}
