@@ -31,6 +31,8 @@
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>请允许访问您的位置，以获取更好的体验</string>
+	<key>UILaunchStoryboardName</key>
+	<string>Launch Screen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
