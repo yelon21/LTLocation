@@ -327,14 +327,15 @@
 }
 
 - (BOOL)locateEnableIOS8Before{
-
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored"-Wdeprecated-declarations"
     if ([CLLocationManager locationServicesEnabled] && [CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorized) {
         
         //定位功能可用，开始定位
         
         return YES;
     }
-
+#pragma clang diagnostic pop
     return NO;
 }
 
