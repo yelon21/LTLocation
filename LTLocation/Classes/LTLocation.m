@@ -97,10 +97,21 @@
         }
         locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
         locationManager.distanceFilter = 10.0;
-        [locationManager startUpdatingLocation];
+        
     }
     
     return self;
+}
+
+//开始定位
+-(void)lt_startLocation{
+
+    [locationManager startUpdatingLocation];
+}
+//停止定位
+-(void)lt_stopLocation{
+
+    [locationManager stopUpdatingLocation];
 }
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations{
@@ -134,8 +145,8 @@
         
         CLLocationCoordinate2D newCoordinate2D = newLocation.coordinate;
         
-        NSString *apiUrl = [NSString stringWithFormat:@"http://api.map.baidu.com/ag/coord/convert?from=0&to=4&x=%@&y=%@",@(newCoordinate2D.longitude),@(newCoordinate2D.latitude)];
-        NSLog(@"apiUrl == %@",apiUrl);
+        NSString *apiUrl = [NSString stringWithFormat:@"https://api.map.baidu.com/ag/coord/convert?from=0&to=4&x=%@&y=%@",@(newCoordinate2D.longitude),@(newCoordinate2D.latitude)];
+
         NSString *jsonString = [[NSString alloc]initWithContentsOfURL:[NSURL URLWithString:apiUrl]
                                                              encoding:NSUTF8StringEncoding
                                                                 error:nil];
@@ -272,7 +283,7 @@
     
     if ([self locateEnable]) {
         
-        if ([self.latitudeGPS doubleValue] == 0.0 || [self.latitudeGPS doubleValue] == 0.0) {
+        if ([self.latitudeGPS doubleValue] == 0.0 || [self.longitudeGPS doubleValue] == 0.0) {
             
             return NO;
         }
@@ -422,7 +433,7 @@ const double ee = 0.00669342162296594323;
     
     if (locationManager) {
         
-        [locationManager stopUpdatingLocation];
+        [self lt_stopLocation];
     }
 }
 @end

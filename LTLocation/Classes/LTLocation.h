@@ -26,4 +26,9 @@
 @property(nonatomic,strong) void(^LocationDisableBlock)();
 
 + (id)sharedLocation;
+
+//开始定位
+-(void)lt_startLocation;
+//停止定位
+-(void)lt_stopLocation;
 @end
