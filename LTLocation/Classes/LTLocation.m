@@ -220,6 +220,10 @@
                            NSString *subCity = self.currentPlacemark.subLocality;
                            NSString *code  = self.currentPlacemark.postalCode;
                            
+                           if (!state) {
+                               
+                               state = @"";
+                           }
                            if (!city) {
                                
                                city = @"";
