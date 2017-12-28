@@ -247,6 +247,11 @@
                                
                                self.city = city;
                            }
+                           
+                           if (state==nil||[state isEqualToString:@""]) {
+                               
+                               state = city;
+                           }
                        }
                    }];
 }
