@@ -1,19 +1,23 @@
 PODS:
   - GTMBase64 (1.0.0)
-  - LTLocation (0.1.0):
+  - LTLocation (0.1.1):
     - GTMBase64 (~> 1.0.0)
 
 DEPENDENCIES:
   - LTLocation (from `../`)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GTMBase64
+
 EXTERNAL SOURCES:
   LTLocation:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   GTMBase64: 0da7372e95f5171f3f652db38cde6716f8eb5e24
-  LTLocation: 1c0afca547b77194f9206267fc514a8f55ed89c7
+  LTLocation: ae1f59b2e94848c95289545f34c2424ee4719020
 
-PODFILE CHECKSUM: 258cf35918ed3e15a3e5ea349baff6094a6ea800
+PODFILE CHECKSUM: eec7f34181ac3679a87ce3bf65c9ed73d4189222
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.5.3

@@ -171,7 +171,7 @@
                     self.latitudeBaiDu = [[NSString alloc]initWithData:[GTMBase64 decodeString:yEnc] encoding:NSUTF8StringEncoding];
                 }
             }
-            NSLog(@"longitudeStr == %@,%@",_latitudeBaiDu,_longitudeBaiDu);
+            NSLog(@"longitudeStr == %@,%@",self->_latitudeBaiDu,self->_longitudeBaiDu);
         });
     });
     

@@ -23,7 +23,7 @@
 @property(nonatomic,strong,readonly) NSString *briefAddress;//省|市|区|postalCode
 @property(nonatomic,strong,readonly) NSString *city;
 
-@property(nonatomic,strong) void(^LocationDisableBlock)();
+@property(nonatomic,strong) void(^LocationDisableBlock)(void);
 
 + (id)sharedLocation;
 
