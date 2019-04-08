@@ -76,7 +76,7 @@
 
 -(id)init{
 
-    if ([super init]) {
+    if (self = [super init]) {
 
         self.latitudeGPS = @"0.0";
         self.longitudeGPS = @"0.0";
@@ -248,10 +248,10 @@
                                self.city = city;
                            }
                            
-                           if (state==nil||[state isEqualToString:@""]) {
-                               
-                               state = city;
-                           }
+//                           if (state==nil||[state isEqualToString:@""]) {
+//                               
+//                               state = city;
+//                           }
                        }
                    }];
 }
