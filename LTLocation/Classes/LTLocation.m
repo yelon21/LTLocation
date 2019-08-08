@@ -209,7 +209,7 @@
                                
                                detailAddress = [detailAddress substringFromIndex:2];
                            }
-                           self.detailAddress = detailAddress;
+                           self.detailAddress = [detailAddress stringByReplacingOccurrencesOfString:@"(null)" withString:@""];
                            
                            if (self.detailAddress) {
                                [[NSNotificationCenter defaultCenter] postNotificationName:@"updateLocation" object:nil];
@@ -237,7 +237,7 @@
                                code = @"";
                            }
 
-                           self.briefAddress = [NSString stringWithFormat:@"%@|%@|%@|%@",state,city,subCity,code];
+                           self.briefAddress = [[NSString stringWithFormat:@"%@|%@|%@|%@",state,city,subCity,code] stringByReplacingOccurrencesOfString:@"(null)" withString:@""];
                            
                            if (city==nil||[city isEqualToString:@""]) {
                                
